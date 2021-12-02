@@ -13,11 +13,11 @@ RUN pip install --upgrade pip
 ADD ./requirements.txt /app/
 RUN pip install -r /app/requirements.txt
 
-ENV DJANGO_SETTINGS_MODULE=diagnossBackend.settings
+ENV DJANGO_SETTINGS_MODULE=sampleBackend.settings
 
 #dev
 EXPOSE 8000
 
 #docker-compose build
 #docker-compose up
-#docker exec -it diagnossBackend /bin/bash
+#docker exec -it sampleBackend /bin/bash
